@@ -40,7 +40,7 @@ const AvatarGr = () => {
     <AvatarGroup max={5}>
       {users.map((user) => (
         <Avatar alt={user.name} className={classes.avatar} key={user.id}>
-          <Image src={user.url} />
+          <Image src={user.url} alt={user.name} />
         </Avatar>
       ))}
     </AvatarGroup>

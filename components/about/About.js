@@ -35,7 +35,7 @@ const About = () => {
             <Box className={`${classes.imageBox} flex-center`}>
               <Box className={classes.imageBack}>
                 <Box className={classes.image}>
-                  <Image src={about.url} />
+                  <Image src={about.url} alt={about.title} />
                 </Box>
               </Box>
             </Box>
