@@ -1,0 +1,16 @@
+.social {
+  border-radius: 100%;
+  margin-right: 36px;
+  transition: all 0.3s ease;
+}
+.social:last-child {
+  margin-right: 0;
+}
+.social:hover {
+  background-color: #770BAA;
+  box-shadow: 0px 0px 12px 12px #770BAA;
+}
+
+@media screen and (max-width: 899px) {
+
+}

@@ -1,0 +1,132 @@
+.welcome {
+  width: 100%;
+  background: url("../../public/images/background/welcome.png") top center
+    no-repeat;
+  height: 900px;
+}
+.title {
+  margin-top: 100px;
+  font-size: 112px;
+  line-height: 112px;
+  text-align: center;
+  font-family: "Henny Penny", cursive !important;
+  filter: drop-shadow(0px 8px 16px rgba(253, 231, 94, 0.16))
+    drop-shadow(0px 12px 4px rgba(238, 5, 200, 0.16))
+    drop-shadow(0px 29px 16px rgba(28, 17, 55, 0.6));
+}
+.subtitle {
+  font-family: "Bahiana" !important;
+  font-size: 40px;
+  line-height: 56px;
+  letter-spacing: 4px;
+  transform: rotate(-1.8deg);
+  margin-top: -15px;
+  padding-right: 60px;
+  filter: drop-shadow(0px 8px 16px rgba(253, 231, 94, 0.16))
+    drop-shadow(0px 12px 4px rgba(238, 5, 200, 0.16))
+    drop-shadow(0px 29px 16px rgba(28, 17, 55, 0.6));
+}
+.play {
+  padding: 24px 56px;
+  background: rgba(29, 18, 56, 0.6);
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.6);
+  margin-top: 40px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.play span {
+  margin-right: 10px !important;
+}
+.play:hover {
+  background: radial-gradient(
+      48.36% 356.25% at 93.75% 100%,
+      rgba(226, 9, 201, 0.2) 0%,
+      rgba(226, 9, 201, 0) 100%
+    ),
+    linear-gradient(
+      309.06deg,
+      #ee05c8 -63.86%,
+      #ee05c8 5.08%,
+      rgba(243, 3, 199, 0) 75.67%
+    ),
+    #4d39d7;
+}
+.mt {
+  margin-top: 110px;
+}
+.content {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  max-width: 340px;
+}
+.content span {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #f7bc24;
+}
+.subcontent {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.arrowSpace {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nextSection {
+  width: 56px;
+  height: 56px;
+  background: none;
+  border: 2px solid rgba(137, 108, 207, 0.6);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+.nextSection:hover {
+  background: radial-gradient(
+      48.36% 356.25% at 93.75% 100%,
+      rgba(226, 9, 201, 0.2) 0%,
+      rgba(226, 9, 201, 0) 100%
+    ),
+    linear-gradient(
+      309.06deg,
+      #ee05c8 -63.86%,
+      #ee05c8 5.08%,
+      rgba(243, 3, 199, 0) 75.67%
+    ),
+    #4d39d7;
+}
+.learn {
+  font-weight: 500;
+  margin-left: 24px;
+}
+.avatar{
+    border: 2px solid #1d1238 !important;
+}
+.statsContainer{
+   margin-bottom: 25px; 
+   flex-direction: row;
+}
+.statsBox{
+    margin-right: 32px;
+}
+.statsBox:last-child{
+    margin-right: 0;
+}
+.stats{
+    color: #f7bc24;
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 700;
+}
+.statsDesc{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+}
