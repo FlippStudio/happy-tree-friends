@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <section className="footer">
       <Container maxWidth="xl" sx={{ height: "100%" }}>
-        <Box className="flex-space fFlex">
+        <Box className="flex-space fFlex" sx={{ height: "100%" }}>
           <Typography component="div">© 2022 NFT CARTOON</Typography>
           <Socials c={"d-sm-none"} />
         </Box>

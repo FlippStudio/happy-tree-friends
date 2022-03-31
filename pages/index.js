@@ -1,6 +1,7 @@
-import * as React from "react";
 import AboutUs from "../components/AboutUs";
+import Episodes from "../components/Episodes";
 import Footer from "../components/Footer";
+import NftCollection from "../components/NftCollection";
 import Welcome from "../components/Welcome";
 
 export default function Index() {
@@ -8,6 +9,8 @@ export default function Index() {
     <>
       <Welcome />
       <AboutUs />
+      <NftCollection />
+      <Episodes />
       <Footer />
     </>
   );

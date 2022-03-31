@@ -1,0 +1,161 @@
+.nftBtn {
+  padding: 16px 40px;
+  background: rgba(52, 33, 98, 0.6);
+  border-radius: 16px;
+  margin-right: 24px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.nftBtn:last-child {
+  margin-right: 0;
+}
+.nftBtn:hover {
+  background: radial-gradient(
+      48.36% 356.25% at 93.75% 100%,
+      rgba(226, 9, 201, 0.2) 0%,
+      rgba(226, 9, 201, 0) 100%
+    ),
+    linear-gradient(
+      309.06deg,
+      #ee05c8 -63.86%,
+      #ee05c8 5.08%,
+      rgba(243, 3, 199, 0) 75.67%
+    ),
+    #4d39d7;
+}
+.active {
+  background: radial-gradient(
+      48.36% 356.25% at 93.75% 100%,
+      rgba(226, 9, 201, 0.2) 0%,
+      rgba(226, 9, 201, 0) 100%
+    ),
+    linear-gradient(
+      309.06deg,
+      #ee05c8 -63.86%,
+      #ee05c8 5.08%,
+      rgba(243, 3, 199, 0) 75.67%
+    ),
+    #4d39d7;
+}
+.nftBox {
+  background: #342162;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+}
+.nftTitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+.nftImage {
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.label {
+  margin-bottom: 8px;
+}
+.price {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.sublabel {
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.5;
+}
+.itemBtn {
+  margin-top: 16px;
+  background: radial-gradient(
+      48.36% 356.25% at 93.75% 100%,
+      rgba(226, 9, 201, 0.2) 0%,
+      rgba(226, 9, 201, 0) 100%
+    ),
+    linear-gradient(
+      309.06deg,
+      #ee05c8 -63.86%,
+      #ee05c8 5.08%,
+      rgba(243, 3, 199, 0) 75.67%
+    ),
+    #4d39d7;
+  width: 100%;
+  height: 56px;
+  color: #ffffff;
+  box-shadow: 0px 6px 24px #770baa;
+  border-radius: 16px;
+}
+
+.episodes {
+  background: #342162;
+  padding: 120px 0;
+}
+.videoBox {
+  background: #1d1238;
+  border-radius: 16px;
+  max-width: 708px;
+}
+.videoImage {
+  position: relative;
+}
+.videoImage span {
+  border-radius: 16px 16px 0 0;
+}
+.play {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
+  flex-direction: row;
+}
+.play span {
+  margin: 0 8px 0 0 !important;
+}
+.duration {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
+}
+.videoText {
+  padding: 24px;
+}
+.videoTitle {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.loadMore {
+  width: 56px;
+  height: 56px;
+  border: 2px solid rgba(137, 108, 207, 0.6);
+  border-radius: 16px;
+  margin-right: 24px;
+}
+.loadMore:hover{
+    background: radial-gradient(
+      48.36% 356.25% at 93.75% 100%,
+      rgba(226, 9, 201, 0.2) 0%,
+      rgba(226, 9, 201, 0) 100%
+    ),
+    linear-gradient(
+      309.06deg,
+      #ee05c8 -63.86%,
+      #ee05c8 5.08%,
+      rgba(243, 3, 199, 0) 75.67%
+    ),
+    #4d39d7;
+}
+.loadMoreText{
+    font-weight: 500;
+    line-height: 24px;
+}
