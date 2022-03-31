@@ -65,7 +65,7 @@ const Episodes = () => {
             </Box>
           </Grid>
           {videos.map((video) => (
-            <Grid item sm={6}>
+            <Grid item sm={6} key={video.id}>
               <Video video={video} />
             </Grid>
           ))}
