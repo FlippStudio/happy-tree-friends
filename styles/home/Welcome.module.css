@@ -134,7 +134,7 @@
 
 @media screen and (max-width: 899px){
   .mt{
-    display: noneG;
+    display: none;
   }
   .title{
     font-size: 85px;
