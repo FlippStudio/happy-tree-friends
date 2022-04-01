@@ -27,7 +27,7 @@ const Nft = ({nft}) => {
           Instant price
         </Typography>
       </Box>
-      <Button className={classes.itemBtn}>MINT</Button>
+      <Button className={`${classes.itemBtn} btn`}>MINT</Button>
     </Box>
   );
 };

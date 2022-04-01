@@ -9,50 +9,77 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Socials from "./Socials";
-import Link from "next/link";
-import Image from "next/image";
 import classes from "../styles/MainNavigation.module.css";
-
-const pages = ["About us", "NFT Collection", "Movies", "Newsletter", "FAQ"];
 
 const ResponsiveApp = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
   const lg = "d-lg-none flex-end";
   const xs = "flex-center";
+
+  const scrollTo = (e, component) => {
+    handleCloseNavMenu();
+    component && component.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToAbout = (e) => {
+    let component = document.getElementById("about");
+    scrollTo(e, component);
+  };
+
+  const scrollToCollection = (e) => {
+    let component = document.getElementById("collection");
+    scrollTo(e, component);
+  };
+
+  const scrollToMovies = (e) => {
+    let component = document.getElementById("movies");
+    scrollTo(e, component);
+  };
+
+  const scrollToNewsletter = (e) => {
+    let component = document.getElementById("newsletter");
+    scrollTo(e, component);
+  };
+
+  const scrollToFaq = (e) => {
+    let component = document.getElementById("faq");
+    scrollTo(e, component);
+  };
+
+  const pages = [];
 
   return (
     <AppBar position="static" className={classes.appBar}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box
-            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+            sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}
             className="menu-position"
           >
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                className={classes.page}
-              >
-                {page}
-              </Button>
-            ))}
+            <Button onClick={scrollToAbout} className={classes.page}>
+              About us
+            </Button>
+            <Button onClick={scrollToCollection} className={classes.page}>
+              NFT Collection
+            </Button>
+            <Button onClick={scrollToMovies} className={classes.page}>
+              Movies
+            </Button>
+            <Button onClick={scrollToNewsletter} className={classes.page}>
+              Newsletter
+            </Button>
+            <Button onClick={scrollToFaq} className={classes.page}>
+              FAQ
+            </Button>
             <Button
               className={classes.wallet}
               onClick={handleCloseNavMenu}
@@ -65,7 +92,7 @@ const ResponsiveApp = () => {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "flex", md: "none" },
+              display: { xs: "flex", lg: "none" },
               justifyContent: "flex-end",
             }}
           >
@@ -94,21 +121,54 @@ const ResponsiveApp = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: "block", lg: "none" },
               }}
               className="menu-mobile"
             >
-              {pages.map((page) => (
-                <Menuitem key={page} sx={{ justifyContent: "center" }}>
-                  <Button
-                    className={classes.page}
-                    onClick={handleCloseNavMenu}
-                    variant="text"
-                  >
-                    {page}
-                  </Button>
-                </Menuitem>
-              ))}
+              <Menuitem
+                onClick={scrollToAbout}
+                onTouchStart={scrollToAbout}
+                className={classes.page}
+              >
+                About us
+              </Menuitem>
+              <Menuitem
+                onClick={scrollToCollection}
+                onTouchStart={scrollToCollection}
+                className={classes.page}
+              >
+                NFT Collection
+              </Menuitem>
+              <Menuitem
+                onClick={scrollToMovies}
+                onTouchStart={scrollToMovies}
+                className={classes.page}
+              >
+                Movies
+              </Menuitem>
+              <Menuitem
+                onClick={scrollToNewsletter}
+                onTouchStart={scrollToNewsletter}
+                className={classes.page}
+              >
+                Newsletter
+              </Menuitem>
+              <Menuitem
+                onClick={scrollToFaq}
+                onTouchStart={scrollToFaq}
+                className={classes.page}
+              >
+                FAQ
+              </Menuitem>
+              <Menuitem sx={{ justifyContent: "center" }}>
+                <Button
+                  className={classes.wallet}
+                  onClick={handleCloseNavMenu}
+                  variant="text"
+                >
+                  Wallet
+                </Button>
+              </Menuitem>
 
               <Socials c={xs} />
             </Menu>

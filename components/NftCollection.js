@@ -3,6 +3,7 @@ import { Container, Grid, Box, Typography, Stack, Button } from "@mui/material";
 import classes from "../styles/home/NftCollection.module.css";
 import nft from "../public/images/nft/nft.svg";
 import Nft from "./collection/Nft";
+import SliderNft from "./sliders/SliderNft";
 
 const nfts = [
   {
@@ -65,33 +66,39 @@ const nfts = [
 
 const NftCollection = () => {
   return (
-    <section className="collection">
+    <section className={classes.collection} id="collection">
       <Container maxWidth="xl">
         <Grid container spacing={3}>
-          <Grid item sm={6}>
+          <Grid item lg={6} xs={12}>
             <Box className="flex-start">
               <Typography className="title-section" component="h2">
                 NFTs Collection
               </Typography>
             </Box>
           </Grid>
-          <Grid item sm={6}>
-            <Box className="flex-end">
-              <Stack direction="row" spacing={0}>
-                <Button className={`${classes.nftBtn} ${classes.active}`}>
+          <Grid item lg={6} xs={12} sx={{ display: { xs: "none", sm: "block" } }}>
+            <Box className={`${classes.fStart} flex-end`}>
+              <Stack
+                spacing={0}
+                sx={{ flexDirection: { xs: "column", sm: "row" } }}
+              >
+                <Button className={`btn ${classes.nftBtn} ${classes.active}`}>
                   Season 1
                 </Button>
-                <Button className={classes.nftBtn}>Season 2</Button>
-                <Button className={classes.nftBtn}>Season 3</Button>
+                <Button className={`btn ${classes.nftBtn}`}>Season 2</Button>
+                <Button className={`${classes.nftBtn} btn`}>Season 3</Button>
               </Stack>
             </Box>
           </Grid>
           {nfts.map((nft) => (
-            <Grid item lg={3} key={nft.id}>
+            <Grid item lg={3} md={4} sm={6} key={nft.id} sx={{ display: { xs: "none", sm: "block" } }}>
               <Nft nft={nft} />
             </Grid>
           ))}
         </Grid>
+        <Box sx={{ display: { xs: "block", sm: "none" }, marginTop: '30px' }}>
+          <SliderNft />
+        </Box>
       </Container>
     </section>
   );

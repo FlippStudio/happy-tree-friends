@@ -23,9 +23,17 @@ button.wallet{
   font-family: "DM Sans", sans-serif;
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 1199px) {
   .page {
     font-size: 18px;
-    margin: 5px 0;
+    margin: 10px 0;
+    text-align: center;
+    touch-action: none;
+  }
+  button.wallet{
+    margin: 10px 0 20px;
+  }
+  .appBar{
+    padding: 0;
   }
 }

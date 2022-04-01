@@ -1,10 +1,10 @@
 import { Container, Box, Typography } from "@mui/material";
 import classes from "../styles/home/About.module.css";
-import About from './about/About'
+import About from "./about/About";
 
 const AboutUs = () => {
   return (
-    <Container maxWidth="xl" className={classes.about}>
+    <Container maxWidth="xl" className={classes.about} id="about">
       <Typography component="h2" variant="h2" className="title-section">
         About Us
       </Typography>

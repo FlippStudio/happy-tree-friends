@@ -105,6 +105,7 @@
 .learn {
   font-weight: 500;
   margin-left: 24px;
+  font-size: 16px;
 }
 .avatar{
     border: 2px solid #1d1238 !important;
@@ -129,4 +130,18 @@
     font-size: 20px;
     line-height: 32px;
     font-weight: 500;
+}
+
+@media screen and (max-width: 899px){
+  .mt{
+    display: noneG;
+  }
+  .title{
+    font-size: 85px;
+  }
+  .subtitle{
+    font-size: 30px;
+    padding-right: 10px;
+    margin-top: -30px;
+  }
 }

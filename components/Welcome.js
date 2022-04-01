@@ -8,9 +8,13 @@ import AvatarGr from "./welcome/Avatar";
 import Stats from "./welcome/Stats";
 
 const scrollTo = (e) => {
-  let utilities = document.getElementById("uti");
-  e.preventDefault(); // Stop Page Reloading
-  utilities && utilities.scrollIntoView({ behavior: "smooth" });
+  let about = document.getElementById("about");
+  about && about.scrollIntoView({ behavior: "smooth" });
+};
+
+const scrollToMovies = (e) => {
+  let about = document.getElementById("movies");
+  about && about.scrollIntoView({ behavior: "smooth" });
 };
 
 const Welcome = () => {
@@ -29,7 +33,7 @@ const Welcome = () => {
               </Typography>
             </Box>
             <Box className="flex-center">
-              <Button className={classes.play}>
+              <Button className={classes.play} onClick={scrollToMovies} onTouchStart={scrollToMovies}>
                 <Image src={play} alt="Play video" />
                 Play video
               </Button>

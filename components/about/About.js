@@ -30,8 +30,8 @@ const About = () => {
   return (
     <Grid container spacing={4} className={classes.imageContainer}>
       {abouts.map((about) => (
-        <Grid item lg={4} key={about.id}>
-          <Box className="flex-center">
+        <Grid item lg={4} md={4} xs={12} key={about.id}>
+          <Box className="flex-center" sx={{ flexDirection: "column" }}>
             <Box className={`${classes.imageBox} flex-center`}>
               <Box className={classes.imageBack}>
                 <Box className={classes.image}>

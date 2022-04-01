@@ -21,7 +21,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 .flex-end {
   display: flex;
@@ -38,6 +37,25 @@ a {
   justify-content: space-between;
   align-items: flex-end;
   height: 100%;
+}
+.btn {
+  background: radial-gradient(
+      48.36% 356.25% at 93.75% 100%,
+      rgba(226, 9, 201, 0.2) 0%,
+      rgba(226, 9, 201, 0) 100%
+    ),
+    linear-gradient(
+      309.06deg,
+      #ee05c8 -63.86%,
+      #ee05c8 5.08%,
+      rgba(243, 3, 199, 0) 75.67%
+    ),
+    #4d39d7;
+  height: 56px;
+  color: #ffffff;
+  box-shadow: 0px 6px 24px #770baa;
+  border-radius: 16px;
+  transition: all 0.3s ease;
 }
 .menu-position {
   justify-content: flex-end;
@@ -59,23 +77,94 @@ a {
   border-bottom: 2px solid #ee05c8;
 }
 
-.title-section{
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 56px;
-    text-transform: capitalize;
-    margin-bottom: 32px;
+.title-section {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  text-transform: capitalize;
+  margin-bottom: 32px;
 }
 
-.collection{
-  margin: 130px 0;
-}
-.mt-4{
+.mt-4 {
   margin-top: 70px;
+}
+
+.accordion {
+  background-color: transparent;
+}
+
+.Mui-expanded .acc-title {
+  color: #f6ad0b !important;
+}
+.acc-title {
+  font-size: 24px;
+  line-height: 32px;
+}
+.Mui-expanded .MuiAccordionSummary-content,
+.MuiAccordionSummary-content {
+  margin: 16px 0 !important;
+}
+.MuiAccordionSummary-expandIconWrapper {
+  width: 56px;
+  height: 56px;
+  border: 2px solid rgba(137, 108, 207, 0.6);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
   background: #000113;
   width: 100%;
   height: 70px;
+}
+
+.d-xs-none{
+  display: none;
+}
+
+@media screen and (min-width: 1620px) {
+  .MuiContainer-root {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (max-width: 1619px) {
+  .MuiContainer-root {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .d-lg-none {
+    display: none;
+  }
+  #menu-appbar .MuiPopover-paper {
+    background: #342162;
+    max-height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    top: 65px !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 599px){
+  .title-section {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+  .d-xs-none{
+    display: block;
+  }
+  .acc-title{
+    font-size: 20px;
+  }
+  #menu-appbar .MuiPopover-paper {
+    top: 57px !important;
+  }
 }

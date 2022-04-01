@@ -1,5 +1,6 @@
 .about {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #342162;
   border-radius: 48px;
   text-align: center;
@@ -9,8 +10,8 @@
   font-size: 18px;
   max-width: 820px;
 }
-.imageContainer{
-    margin-top: 70px;
+.imageContainer {
+  margin-top: 70px;
 }
 .imageBox {
   background: radial-gradient(
@@ -45,16 +46,43 @@
   align-items: flex-end;
   justify-content: center;
 }
-.title{
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
-    color: #F6Ad0B;
-    margin-bottom: 8px;
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #f6ad0b;
+  margin-bottom: 8px;
 }
-.imageDesc{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
+.imageDesc {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  max-width: 350px;
+}
+
+@media screen and (max-width: 1199px) {
+  .title {
+    font-size: 28px;
+  }
+  .imageDesc {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 899px) {
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .imageDesc {
     max-width: 350px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 599px){
+  .desc {
+    font-size: 16px;
+  }
 }
