@@ -31,7 +31,7 @@ button.wallet{
     touch-action: none;
   }
   button.wallet{
-    margin: 10px 0 20px;
+    margin: 0;
   }
   .appBar{
     padding: 0;

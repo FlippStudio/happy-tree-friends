@@ -124,6 +124,35 @@ a {
   display: none;
 }
 
+#roadmap .swiper-slide{
+  opacity: 0.3;
+}
+#roadmap .swiper-slide-active{
+  opacity: 1;
+}
+
+#roadmap .swiper-pagination{
+  top: 40px;
+  bottom: auto;
+  height: 32px;
+  text-align: left;
+  background: url('../public/images/background/line.png') center left no-repeat;
+  width: 100%;
+  padding-left: 22px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1450px;
+}
+#roadmap .swiper-pagination-bullet{
+  width: 32px;
+  height: 32px;
+  border: 2px solid #59438F;
+}
+#roadmap .swiper-pagination-bullet-active{
+  background: #FFF;
+  border: 11px solid #8E76C7;
+}
+
 @media screen and (min-width: 1620px) {
   .MuiContainer-root {
     padding: 0 80px;
@@ -150,6 +179,15 @@ a {
     left: 0 !important;
     right: 0 !important;
   }
+  .social-down{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -70px;
+  }
+  #menu-appbar ul{
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 599px){
@@ -166,5 +204,8 @@ a {
   }
   #menu-appbar .MuiPopover-paper {
     top: 57px !important;
+  }
+  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background: #ee05c8 !important;
   }
 }

@@ -6,6 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import Menuitem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from '@mui/icons-material/Close';
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Socials from "./Socials";
@@ -23,7 +24,7 @@ const ResponsiveApp = () => {
   };
 
   const lg = "d-lg-none flex-end";
-  const xs = "flex-center";
+  const xs = "flex-center social-down";
 
   const scrollTo = (e, component) => {
     handleCloseNavMenu();
@@ -54,8 +55,6 @@ const ResponsiveApp = () => {
     let component = document.getElementById("faq");
     scrollTo(e, component);
   };
-
-  const pages = [];
 
   return (
     <AppBar position="static" className={classes.appBar}>
@@ -95,20 +94,22 @@ const ResponsiveApp = () => {
               display: { xs: "flex", lg: "none" },
               justifyContent: "flex-end",
             }}
+            
           >
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+              >
+              {anchorElNav !== null ? <CloseIcon /> : <MenuIcon />}
             </IconButton>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
+              
               anchorOrigin={{
                 vertical: "bottom",
                 horizontal: "center",
@@ -169,7 +170,6 @@ const ResponsiveApp = () => {
                   Wallet
                 </Button>
               </Menuitem>
-
               <Socials c={xs} />
             </Menu>
           </Box>

@@ -198,4 +198,7 @@
   .videoTitle {
     font-size: 22px;
   }
+  .videoImage span {
+    border-radius: 0;
+  }
 }

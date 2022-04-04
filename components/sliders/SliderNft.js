@@ -3,6 +3,7 @@ import nft from "../../public/images/nft/nft.svg";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import { Pagination } from "swiper";
 
 import Nft from "../collection/Nft";
 
@@ -71,6 +72,10 @@ const SliderNft = () => {
       <Swiper
         slidesPerView={"auto"}
         loop={true}
+        pagination={{
+          type: "progressbar",
+        }}
+        modules={[Pagination]}
         breakpoints={{
           300: {
             slidesPerView: 1,

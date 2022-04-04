@@ -1,6 +1,7 @@
 .roadmap {
   padding: 100px 0 0;
   background: rgba(52, 33, 98, 0.5);
+  overflow-x: hidden;
 }
 .textSec {
   text-align: center;
@@ -37,8 +38,7 @@
   width: 99%;
   height: 513px;
   background: url("../../public/images/background/mask.png") top center
-      no-repeat,
-    url("../../public/images/background/welcome.png") top center no-repeat;
+    no-repeat;
   background-size: cover;
   filter: drop-shadow(0px 8px 16px rgba(253, 231, 94, 0.16))
     drop-shadow(0px 12px 4px rgba(238, 5, 200, 0.16))

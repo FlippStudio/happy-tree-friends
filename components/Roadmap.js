@@ -14,7 +14,9 @@ const Roadmap = () => {
             Proin nulla est, gravida non augue nec, iaculis accumsan ex.
           </Typography>
         </Box>
-        <SliderRoadmap />
+      </Container>
+      <SliderRoadmap />
+      <Container maxWidth="xl">
         <Box className={`${classes.newsBox} flex-center`} id="newsletter">
           <Box className={classes.backBox}>
             <Typography component="h2" className="title-section">

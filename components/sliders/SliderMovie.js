@@ -3,6 +3,7 @@ import video from "../../public/images/episode/video.jpg";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import { Pagination } from "swiper";
 
 import Video from "../episode/Video";
 
@@ -47,6 +48,10 @@ const SliderMovie = () => {
       <Swiper
         slidesPerView={"auto"}
         loop={true}
+        pagination={{
+          type: "progressbar",
+        }}
+        modules={[Pagination]}
         breakpoints={{
           300: {
             slidesPerView: 1,
