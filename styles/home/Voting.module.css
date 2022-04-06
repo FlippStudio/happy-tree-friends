@@ -1,0 +1,60 @@
+.voting {
+  padding-bottom: 100px;
+}
+.desc {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 48px;
+  max-width: 600px;
+}
+.votingBox {
+  padding: 40px 48px;
+  border: 1px solid #fd39df;
+  border-radius: 32px;
+}
+.votingTitle {
+  font-size: 32px;
+  line-height: 40px;
+  color: #f6ad0b;
+  margin-bottom: 8px;
+}
+.votingDesc {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.votingBtn {
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  border: 2px solid #fd39df;
+  border-radius: 16px;
+  height: 56px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.radio {
+  font-size: 24px;
+  font-weight: 700;
+}
+.radio span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f6ad0b;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .votingBox {
+    padding: 30px;
+  }
+  .votingTitle {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .radio, .radio span {
+    font-size: 20px;
+  }
+}

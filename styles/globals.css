@@ -39,18 +39,8 @@ a {
   height: 100%;
 }
 .btn {
-  background: radial-gradient(
-      48.36% 356.25% at 93.75% 100%,
-      rgba(226, 9, 201, 0.2) 0%,
-      rgba(226, 9, 201, 0) 100%
-    ),
-    linear-gradient(
-      309.06deg,
-      #ee05c8 -63.86%,
-      #ee05c8 5.08%,
-      rgba(243, 3, 199, 0) 75.67%
-    ),
-    #4d39d7;
+  background: #fd39df;
+  border: 1px solid #941581;
   height: 56px;
   color: #ffffff;
   box-shadow: 0px 6px 24px #770baa;
@@ -83,6 +73,46 @@ a {
   line-height: 56px;
   text-transform: capitalize;
   margin-bottom: 32px;
+}
+
+/* progress bar */
+.MuiLinearProgress-root {
+  height: 24px;
+  border-radius: 16px;
+  background: #492c91;
+  opacity: 0.5;
+}
+.MuiLinearProgress-bar {
+  background: #342162;
+  border-radius: 16px;
+}
+
+#collection .swiper {
+  height: 100%;
+}
+.swiper-button-prev {
+  background: url("../public/images/nft/prev.svg") center center no-repeat !important;
+}
+.swiper-button-next {
+  background: url("../public/images/nft/next.svg") center center no-repeat !important;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "" !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  width: 56px !important;
+  height: 56px !important;
+  padding: 28px;
+  border: 2px solid rgba(137, 108, 207, 0.6);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #fd39df !important;
 }
 
 .mt-4 {
@@ -120,37 +150,37 @@ a {
   height: 70px;
 }
 
-.d-xs-none{
+.d-xs-none {
   display: none;
 }
 
-#roadmap .swiper-slide{
+#roadmap .swiper-slide {
   opacity: 0.3;
 }
-#roadmap .swiper-slide-active{
+#roadmap .swiper-slide-active {
   opacity: 1;
 }
 
-#roadmap .swiper-pagination{
+#roadmap .swiper-pagination {
   top: 40px;
   bottom: auto;
   height: 32px;
   text-align: left;
-  background: url('../public/images/background/line.png') center left no-repeat;
+  background: url("../public/images/background/line.png") center left no-repeat;
   width: 100%;
   padding-left: 22px;
   display: flex;
   justify-content: space-between;
   max-width: 1450px;
 }
-#roadmap .swiper-pagination-bullet{
+#roadmap .swiper-pagination-bullet {
   width: 32px;
   height: 32px;
-  border: 2px solid #59438F;
+  border: 2px solid #59438f;
 }
-#roadmap .swiper-pagination-bullet-active{
-  background: #FFF;
-  border: 11px solid #8E76C7;
+#roadmap .swiper-pagination-bullet-active {
+  background: #fff;
+  border: 11px solid #8e76c7;
 }
 
 @media screen and (min-width: 1620px) {
@@ -179,33 +209,40 @@ a {
     left: 0 !important;
     right: 0 !important;
   }
-  .social-down{
+  .social-down {
     position: absolute;
     bottom: 100px;
     left: 50%;
     margin-left: -70px;
   }
-  #menu-appbar ul{
+  #menu-appbar ul {
     height: 100%;
   }
 }
 
-@media screen and (max-width: 599px){
+@media screen and (max-width: 599px) {
   .title-section {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 16px;
   }
-  .d-xs-none{
+  .d-xs-none {
     display: block;
   }
-  .acc-title{
+  .acc-title {
     font-size: 20px;
   }
   #menu-appbar .MuiPopover-paper {
     top: 57px !important;
   }
-  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     background: #ee05c8 !important;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 92% !important;
+  }
+  #collection .swiper {
+    padding-bottom: 50px;
   }
 }

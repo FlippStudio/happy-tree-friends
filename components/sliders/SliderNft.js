@@ -2,96 +2,119 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import nft from "../../public/images/nft/nft.svg";
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
 
 import Nft from "../collection/Nft";
+import classes from "../../styles/home/Slider.module.css";
 
 const nfts = [
   {
     id: 1,
-    name: "NFT Name #123",
+    name: "#12 Terra Friend",
     url: nft,
-    fixedPrice: "3.21ETH",
-    amountsCollection: 2000,
+    traits: [
+      {
+        id: 1,
+        type: 'Clothes',
+        name: 'Lorem ipsum',
+        rarity: 0,
+      },
+      {
+        id: 2,
+        type: 'Face',
+        name: 'Dolor sit',
+        rarity: 0,
+      },
+      {
+        id: 3,
+        type: 'Hands',
+        name: 'Proin nulla',
+        rarity: 0,
+      },
+      {
+        id: 4,
+        type: 'Hat',
+        name: 'Amet ipsum',
+        rarity: 0,
+      },
+    ]
   },
   {
     id: 2,
-    name: "NFT Name #123",
+    name: "#13 Terra Friend",
     url: nft,
-    fixedPrice: "3.21ETH",
-    amountsCollection: 2000,
+    traits: [
+      {
+        id: 1,
+        type: 'Clothes',
+        name: 'Lorem ipsum',
+        rarity: 0,
+      },
+      {
+        id: 2,
+        type: 'Face',
+        name: 'Dolor sit',
+        rarity: 0,
+      },
+      {
+        id: 3,
+        type: 'Hands',
+        name: 'Proin nulla',
+        rarity: 0,
+      },
+      {
+        id: 4,
+        type: 'Hat',
+        name: 'Amet ipsum',
+        rarity: 0,
+      },
+    ]
   },
   {
     id: 3,
-    name: "NFT Name #123",
+    name: "#14 Terra Friend",
     url: nft,
-    fixedPrice: "3.21ETH",
-    amountsCollection: 2000,
-  },
-  {
-    id: 4,
-    name: "NFT Name #123",
-    url: nft,
-    fixedPrice: "3.21ETH",
-    amountsCollection: 2000,
-  },
-  {
-    id: 5,
-    name: "NFT Name #123",
-    url: nft,
-    fixedPrice: "3.21ETH",
-    amountsCollection: 2000,
-  },
-  {
-    id: 6,
-    name: "NFT Name #123",
-    url: nft,
-    fixedPrice: "3.21ETH",
-    amountsCollection: 2000,
-  },
-  {
-    id: 7,
-    name: "NFT Name #123",
-    url: nft,
-    fixedPrice: "3.21ETH",
-    amountsCollection: 2000,
-  },
-  {
-    id: 8,
-    name: "NFT Name #123",
-    url: nft,
-    fixedPrice: "3.21ETH",
-    amountsCollection: 2000,
+    traits: [
+      {
+        id: 1,
+        type: 'Clothes',
+        name: 'Lorem ipsum',
+        rarity: 0,
+      },
+      {
+        id: 2,
+        type: 'Face',
+        name: 'Dolor sit',
+        rarity: 0,
+      },
+      {
+        id: 3,
+        type: 'Hands',
+        name: 'Proin nulla',
+        rarity: 0,
+      },
+      {
+        id: 4,
+        type: 'Hat',
+        name: 'Amet ipsum',
+        rarity: 0,
+      },
+    ]
   },
 ];
 
 const SliderNft = () => {
   return (
-    <div className="d-xs-none">
+    <div className={classes.nftOverflow}>
       <Swiper
-        slidesPerView={"auto"}
+        slidesPerView={1}
         loop={true}
-        pagination={{
-          type: "progressbar",
-        }}
-        modules={[Pagination]}
-        breakpoints={{
-          300: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          600: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-        }}
+        navigation={true}
+        modules={[Navigation]}
       >
         {nfts.map((nft) => (
-          <SwiperSlide
-            className={`flex-center`}
-            key={nft.id}
-          >
+          <SwiperSlide className={`flex-center`} key={nft.id}>
             <Nft nft={nft} />
           </SwiperSlide>
         ))}

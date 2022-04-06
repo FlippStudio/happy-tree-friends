@@ -1,80 +1,72 @@
 .collection {
-  margin: 130px 0;
+  min-height: 720px;
 }
-.nftBtn {
-  padding: 16px 40px;
-  background: rgba(52, 33, 98, 0.6);
-  border-radius: 16px;
-  margin-right: 24px;
-  color: #fff;
-  transition: all 0.3s ease;
-  box-shadow: none;
+.nftBoxContent {
+  padding: 260px 0 200px;
 }
-.nftBtn:last-child {
-  margin-right: 0;
+
+.nftDesc {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 40px;
 }
-.nftBtn:hover {
-  background: radial-gradient(
-      48.36% 356.25% at 93.75% 100%,
-      rgba(226, 9, 201, 0.2) 0%,
-      rgba(226, 9, 201, 0) 100%
-    ),
-    linear-gradient(
-      309.06deg,
-      #ee05c8 -63.86%,
-      #ee05c8 5.08%,
-      rgba(243, 3, 199, 0) 75.67%
-    ),
-    #4d39d7;
+.progressBox{
+  padding-right: 50px;
 }
-.active {
-  background: radial-gradient(
-      48.36% 356.25% at 93.75% 100%,
-      rgba(226, 9, 201, 0.2) 0%,
-      rgba(226, 9, 201, 0) 100%
-    ),
-    linear-gradient(
-      309.06deg,
-      #ee05c8 -63.86%,
-      #ee05c8 5.08%,
-      rgba(243, 3, 199, 0) 75.67%
-    ),
-    #4d39d7;
+.progressTitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 8px;
 }
+.progressTitle span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #f6ad0b;
+}
+.progressDesc {
+  line-height: 16px;
+  opacity: 0.5;
+  margin-bottom: 16px;
+}
+
 .nftBox {
-  background: #342162;
+  padding-top: 160px;
+  background: linear-gradient(165.93deg, #32205e 13.17%, #1d1238 66.98%);
   border-radius: 16px;
   width: 100%;
   height: 100%;
-  padding: 32px;
+  padding: 50px;
 }
 .nftTitle {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 32px;
-  margin-bottom: 16px;
+  margin: 24px 0;
+  padding-bottom: 24px;
+  border-bottom: 3px solid #342162;
 }
-.nftImage {
-  border-radius: 16px;
-  margin-bottom: 16px;
-}
-.label {
-  margin-bottom: 8px;
-}
-.price {
-  font-size: 24px;
-  line-height: 24px;
+.traitTitle {
+  font-size: 20px;
   font-weight: 700;
+  line-height: 24px;
   margin-bottom: 8px;
 }
-.sublabel {
+.traitTitle span.traitName {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #f6ad0b;
+  margin-right: 5px;
+}
+.traitDesc {
   font-size: 14px;
   line-height: 16px;
+  font-weight: 500;
   opacity: 0.5;
-}
-.itemBtn {
-  margin-top: 16px;
-  width: 100%;
 }
 
 .episodes {
@@ -129,8 +121,8 @@
   border-radius: 16px;
   margin-right: 24px;
 }
-.loadMore:hover{
-    background: radial-gradient(
+.loadMore:hover {
+  background: radial-gradient(
       48.36% 356.25% at 93.75% 100%,
       rgba(226, 9, 201, 0.2) 0%,
       rgba(226, 9, 201, 0) 100%
@@ -143,32 +135,50 @@
     ),
     #4d39d7;
 }
-.loadMoreText{
-    font-weight: 500;
-    line-height: 24px;
+.loadMoreText {
+  font-weight: 500;
+  line-height: 24px;
 }
 
-@media screen and (max-width: 1500px){
-  .nftTitle {
-    font-size: 20px;
-    font-weight: 700;
+@media screen and (max-width: 1500px) {
+  .nftBox {
+    padding: 40px;
   }
-  .label {
-    font-size: 14px;
+  .traitTitle {
+    font-size: 18px;
   }
-  .price {
-    font-size: 20px;
-  }
-  .sublabel {
-    font-size: 12px;
+  .traitTitle span.traitName {
+    font-size: 18px;
   }
 }
 
-@media screen and (max-width: 1199px){
-  .fStart{
-    justify-content: flex-start;
-    margin-bottom: 20px;
+@media screen and (max-width: 1400px) {
+  .traitTitle {
+    font-size: 16px;
   }
+  .traitTitle span.traitName {
+    font-size: 16px;
+  }
+  .progressBox{
+    padding-right: 30px;
+  }
+  .progressTitle {
+    font-size: 20px;
+  }
+  .progressTitle span {
+    font-size: 20px;
+  }
+  .progressDesc {
+    line-height: 16px;
+    opacity: 0.5;
+    margin-bottom: 16px;
+  }
+  .nftBox {
+    padding: 35px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .videoTitle {
     font-size: 24px;
     line-height: 32px;
@@ -177,18 +187,35 @@
     padding: 20px;
     font-size: 14px;
   }
+
+  .collection {
+    padding: 100px 0;
+    min-height: auto;
+  }
+  .nftBoxContent {
+    padding: 0;
+  }
+  .nftBox {
+    padding: 100px;
+  }
+  .progressBox{
+    padding: 0 15px;
+  }
 }
-@media screen and (max-width: 899px){
+@media screen and (max-width: 899px) {
   .collection {
     margin: 70px 0;
   }
   .episodes {
     padding: 70px 0;
   }
+  .nftBox {
+    padding: 50px;
+  }
 }
 
-@media screen and (max-width: 599px){
-  .fStart{
+@media screen and (max-width: 599px) {
+  .fStart {
     justify-content: center;
   }
   .nftBtn {
@@ -200,5 +227,17 @@
   }
   .videoImage span {
     border-radius: 0;
+  }
+  .collection {
+    padding: 50px 0;
+  }
+  .nftDesc {
+    font-size: 16px;
+  }
+  .nftBox {
+    padding: 50px 15px;
+  }
+  .nftTitle {
+    font-size: 32px;
   }
 }
