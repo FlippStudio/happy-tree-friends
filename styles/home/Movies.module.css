@@ -1,0 +1,54 @@
+.episodes {
+  margin-bottom: -150px;
+  position: relative;
+  z-index: 10;
+}
+.movieContainer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url("../../public/images/background/episode_back.png") top center
+      no-repeat,
+    rgba(108, 71, 198, 0.5);
+  border-radius: 48px;
+}
+.movieDesc {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.movieBtn {
+  background: #1d1238;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  color: #ffffff;
+  padding: 24px 56px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.6);
+}
+.movieBtn span {
+  margin-right: 10px !important;
+}
+.movieBtn:hover {
+  background: #e43dcb;
+}
+
+.episodeBox {
+  max-width: 470px;
+  width: 100%;
+}
+
+@media screen and (max-width: 899px) {
+  .episodes {
+    padding: 70px 0;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .movieDesc {
+    font-size: 16px;
+  }
+}

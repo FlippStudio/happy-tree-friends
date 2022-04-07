@@ -33,13 +33,17 @@
   height: 56px;
   color: #fff;
   text-transform: capitalize;
+  transition: all .3s ease;
+}
+.votingBtn:hover {
+  background: #fd39df;
 }
 
-.radio {
+.radio label{
   font-size: 24px;
   font-weight: 700;
 }
-.radio span {
+.radio label span {
   font-size: 24px;
   font-weight: 700;
   color: #f6ad0b;
@@ -54,7 +58,19 @@
     font-size: 24px;
     line-height: 32px;
   }
-  .radio, .radio span {
+  .radio label, .radio label span {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .radio label span{
+    padding-right: 3px;
+  }
+  .radio label, .radio label span {
+    font-size: 18px;
+  }
+  .votingBox {
+    padding: 30px 20px;
   }
 }
