@@ -39,7 +39,7 @@
   transition: all 0.3s ease;
 }
 .play span {
-  margin-right: 10px !important;
+  padding-right: 10px !important;
 }
 .play:hover {
   background: radial-gradient(
