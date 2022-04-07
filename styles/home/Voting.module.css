@@ -49,6 +49,13 @@
   color: #f6ad0b;
   padding-left: 0;
 }
+.radio label span svg{
+  fill: #6247A5 !important;
+}
+
+.radio label span svg[data-testid="RadioButtonCheckedIcon"]{
+  fill: #f6ad0b !important;
+}
 
 @media screen and (max-width: 1199px) {
   .votingBox {

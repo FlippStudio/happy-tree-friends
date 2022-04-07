@@ -19,6 +19,7 @@ const Vote = ({ vote }) => {
   const handleChange = (event) => {
     setValue(event.target.value);
   };
+
   return (
     <Grid item md={6} xs={12}>
       <Box className={classes.votingBox}>

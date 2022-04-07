@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import Image from "next/image";
 
 // import required modules
-import { Pagination, Mousewheel } from "swiper";
+import { Pagination } from "swiper";
 import { Container, Box, Grid, Typography } from "@mui/material";
 
 const steps = [
@@ -77,8 +77,7 @@ const SliderRoadmap = () => {
       <div className={classes.overflow} id="roadmap">
         <Swiper
           pagination={pagination}
-          mousewheel={true}
-          modules={[Pagination, Mousewheel]}
+          modules={[Pagination]}
           className={classes.swiper}
           slidesPerView={"auto"}
           loop={true}
