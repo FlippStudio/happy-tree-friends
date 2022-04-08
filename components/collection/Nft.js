@@ -15,7 +15,7 @@ const Nft = ({ nft }) => {
         </Typography>
         <Grid container spacing={2}>
           {nft.traits.map((trait) => (
-            <Grid item sm={6} key={trait.id}>
+            <Grid item xs={6} key={trait.id}>
               <Typography component="div" className={classes.traitTitle}>
                 {trait.type}:{" "}
                 <span className={classes.traitName}>{trait.name}</span>{" "}

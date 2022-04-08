@@ -1,5 +1,6 @@
 .collection {
   min-height: 720px;
+  padding-bottom: 250px;
 }
 .nftBoxContent {
   padding: 260px 0 200px;
@@ -69,6 +70,29 @@
   opacity: 0.5;
 }
 
+.voteDesc{
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #f6ad0b;
+}
+.voteDescSmaller{
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.attr{
+  font-size: 18px;
+  line-height: 32px;
+  max-width: 450px;
+  margin-left: 16px;
+}
+.voteBox{
+  height: 100%;
+  margin-bottom: 16px;
+}
+
 
 
 @media screen and (max-width: 1500px) {
@@ -80,6 +104,9 @@
   }
   .traitTitle span.traitName {
     font-size: 18px;
+  }
+  .attr{
+    max-width: 375px;
   }
 }
 
@@ -132,16 +159,21 @@
   .progressBox{
     padding: 0 15px;
   }
+  .attr{
+    max-width: none;
+  }
 }
 @media screen and (max-width: 899px) {
   .collection {
     margin: 70px 0;
+    padding-bottom: 0;
   }
   .episodes {
     padding: 70px 0;
   }
   .nftBox {
     padding: 50px;
+    margin-bottom: 100px;
   }
 }
 
@@ -157,9 +189,20 @@
     font-size: 16px;
   }
   .nftBox {
-    padding: 50px 15px;
+    padding: 50px 15px 100px;
   }
   .nftTitle {
     font-size: 32px;
+  }
+  .voteDesc{
+    font-size: 20px;
+  }
+  .voteDescSmaller{
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .attr{
+    font-size: 16px;
+    line-height: 32px;
   }
 }

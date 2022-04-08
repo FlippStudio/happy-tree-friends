@@ -8,7 +8,9 @@ import {
 
 import classes from "../styles/home/NftCollection.module.css";
 import SliderNft from "./sliders/SliderNft";
-
+import icon from "../public/images/voting/voteIcons.svg";
+import voting from "../public/images/voting/voting.svg";
+import Image from "next/image";
 const traits = [
   {
     id: 1,
@@ -54,7 +56,12 @@ const NftCollection = () => {
                 </Typography>
                 <Grid container rowSpacing={4}>
                   {traits.map((trait) => (
-                    <Grid item sm={6} key={trait.id} className={classes.progressBox}>
+                    <Grid
+                      item
+                      sm={6}
+                      key={trait.id}
+                      className={classes.progressBox}
+                    >
                       <Typography
                         className={classes.progressTitle}
                         component="div"
@@ -79,6 +86,61 @@ const NftCollection = () => {
           </Grid>
           <Grid item lg={6} xs={12}>
             <SliderNft />
+          </Grid>
+        </Grid>
+      </Container>
+      <Container maxWidth="xl">
+        <Grid container columnSpacing={10}>
+          <Grid item lg={7} xs={12} order={{ lg: 1, xs: 2 }}>
+            <Box className="flex-start">
+              <Image src={voting} alt="Vote icons" />
+            </Box>
+          </Grid>
+          <Grid item lg={5} xs={12} order={{ lg: 2, xs: 1 }}>
+            <Box className="flex-start" sx={{ height: "100%" }}>
+              <Box>
+                <Typography component="h2" className="title-section">
+                  Live Voting
+                </Typography>
+                <Typography component="div" className={classes.voteDesc}>
+                  Proin nulla est, gravida non augue nec, iaculis accumsan
+                  mollis bibendum erat.
+                </Typography>
+                <Typography component="div" className={classes.voteDescSmaller}>
+                  Proin nulla est, gravida non augue nec, iaculis accumsan ex.
+                  Etiam sed laoreet ligula. Suspendisse mollis bibendum erat.
+                </Typography>
+                <Box>
+                  <Box className={classes.voteBox}>
+                    <Box className="flex-start" sx={{ height: "100%" }}>
+                      <Image src={icon} alt="Vote icons" />
+                      <Typography component="div" className={classes.attr}>
+                        Morbi neque nulla, consequat eget efficitur vel,
+                        eleifend ullamcorper nisi.
+                      </Typography>
+                    </Box>
+                  </Box>
+                  <Box className={classes.voteBox}>
+                    <Box className="flex-start" sx={{ height: "100%" }}>
+                      <Image src={icon} alt="Vote icons" />
+                      <Typography component="div" className={classes.attr}>
+                        Morbi neque nulla, consequat eget efficitur vel,
+                        eleifend ullamcorper nisi.
+                      </Typography>
+                    </Box>
+                  </Box>
+                  <Box className={classes.voteBox}>
+                    <Box className="flex-start" sx={{ height: "100%" }}>
+                      <Image src={icon} alt="Vote icons" />
+                      <Typography component="div" className={classes.attr}>
+                        Morbi neque nulla, consequat eget efficitur vel,
+                        eleifend ullamcorper nisi.
+                      </Typography>
+                    </Box>
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
           </Grid>
         </Grid>
       </Container>
