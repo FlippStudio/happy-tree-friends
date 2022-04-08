@@ -27,7 +27,9 @@
     drop-shadow(0px 29px 16px rgba(28, 17, 55, 0.6));
 }
 .play {
-  padding: 24px 56px;
+  width: 100%;
+  max-width: 255px;
+  height: 72px;
   background: rgba(29, 18, 56, 0.6);
   border-radius: 16px;
   font-size: 18px;
@@ -37,9 +39,6 @@
   margin-top: 40px;
   color: #fff;
   transition: all 0.3s ease;
-}
-.play span {
-  padding-right: 10px !important;
 }
 .play:hover {
   background: radial-gradient(

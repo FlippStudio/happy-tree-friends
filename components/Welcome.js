@@ -33,8 +33,13 @@ const Welcome = () => {
               </Typography>
             </Box>
             <Box className="flex-center">
-              <Button className={classes.play} onClick={scrollToMovies} onTouchStart={scrollToMovies}>
-                <Image src={play} alt="Play video" />
+              <Button
+                className={classes.play}
+                onClick={scrollToMovies}
+                onTouchStart={scrollToMovies}
+                startIcon={<Image src={play} alt="Play video" />}
+              >
+                
                 Play video
               </Button>
             </Box>
@@ -50,7 +55,6 @@ const Welcome = () => {
             </Typography>
             <Box className={classes.arrowSpace}>
               <Button
-                variant="contained"
                 className={classes.nextSection}
                 onClick={scrollTo}
               >
